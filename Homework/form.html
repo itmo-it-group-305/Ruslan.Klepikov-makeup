@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Site connection</title>
+    </head>
+    <body>
+        <div class="row row-header">
+            <section class="col-12">
+                <header></header>
+                <nav>
+                    <div class="menu2">
+                        <div class="div-menu">
+                            <ul class="menu">
+                                <li><a href="index.html">Главная</a></li>
+                                <li><a href="uslugi.html">Услуги</a></a>
+                                    <ul>
+                                        <li><a href="">Закажи</a></li>
+                                        <li><a href="">Не упусти шанс</a></li>
+                                        <li><a href="">Помоги нам</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="about.html">Контакты</a></li>
+                                <li><a href="form.html">Обратная связь</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </section>
+        </div>
+        <div class="row">
+            <section class="col-12">
+                <form action="index.html" method="post">
+                    <fieldset class="form-client">
+                        <legend>Данные получателя</legend>
+                        <div class="form-str">
+                            <label for="fio">Имя</label>
+                            <input id="fio" name="fio" type="text" placeholder="Имя">
+                        </div>
+                        <div>
+                            <label for="tel">Телефон</label>
+                            <input id="tel"  name="tel" type="tel" placeholder="345-15-42">
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input id="email" name="emeil" type="email" placeholder="Rus2345@Yandex.ru">
+                        </div>
+                    </fieldset>
+                    <fieldset class="form-adress">
+                        <legend></legend>
+                        <label for="city">Выбирете город</label>
+                        <select id="city" name="city">
+                            <option value="1">Лондон</option>
+                            <option value="2">Париж</option>
+                            <option value="3">Москва</option>
+                            <option value="4">Мадрид</option>
+                        </select>
+                        <div></div>
+                        <label for="adres">Адрес</label>
+                        <input id="adres" name="adres" type="text">
+                    </fieldset>
+                </form>
+            </section>
+        </div>
+        <fieldset>
+            <legend>Заказать услугу</legend>
+            <fieldset>
+                <legend>Создание сайта</legend>
+                <div>
+                    <label><input name="chk_metla_1" value="1" type="checkbox">Сайт Визитка-Старт (На шаблоне)</label><br>
+                    <label><input name="chk_metla_2" value="1" type="checkbox">Сайт Визитка-Премиум (С дизайном)</label><br>
+                    <label><input name="chk_metla_3" value="1" type="checkbox">Сайт Корпоративный  (С дизайном)</label><br>
+                    <label><input name="chk_metla_4" value="1" type="checkbox">Сайт Интернет-магазин  (С дизайном)</label><br>
+                    <label><input name="chk_metla_5" value="1" type="checkbox">Сайт Эксклюзив  (С дизайном)</label><br>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Услуги на дизайн</legend>
+                <div>
+                    <label><input name="chk_stupa_1" value="1" type="checkbox">Фирменный стиль</label><br>
+                    <label><input name="chk_stupa_2" value="1" type="checkbox">Макет сайта</label><br>
+                    <label><input name="chk_stupa_3" value="1" type="checkbox">Флэш-анимация</label><br>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Услуги на рекламу в Интернете</legend>
+                <div>
+                    <label><input name="chk_izba_1" value="1" type="checkbox">Услуги на рекламу в Интернете</label><br>
+                    <label><input name="chk_izba_2" value="1" type="checkbox">Контекстная реклама</label><br>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Дополнительно</legend>
+                <div>
+                    <select name="dop" size="5" multiple>
+                        <optgroup label="Сайт">
+                            <option value="1">Услуга 1</option>
+                            <option value="2">Услуга 2</option>
+                            <option value="3">Услуга 3</option>
+                            <option value="4">Услуга 4</option>
+                        </optgroup>
+                        <optgroup label="SЕО">
+                            <option value="1">Услуга 1</option>
+                            <option value="2">Услуга 2</option>
+                            <option value="3">Услуга 3</option>
+                        </optgroup>
+                    </select>
+                </div>
+            </fieldset>
+        </fieldset>
+        <fieldset class="form-indiv">
+            <legend>Индивидуальный заказ</legend>
+            <div>
+                <label for="comment">Пожелания к заказу</label>
+                <textarea name="comment" id="comment"></textarea>
+            </div>
+            <div>
+                <label for="multiFileField">Прикрепите свои макеты</label>
+                <input id="multiFileField" type="file" multiple>
+            </div>
+        </fieldset>
+        <div class="form-submit"><input type="submit" value="Отправить заказ"></div>
+        <a href="catalog.html">Вернуться в каталог</a>
+        <footer>
+            <div class="row">
+                <section class="col-12">
+                    <div class="copy">&copy;Все права защищены</div>
+                    <address>
+                        <p>Карта сайта</p>
+                    </address>
+                </section>
+            </div>
+        </footer>
+    </body>
+</html>

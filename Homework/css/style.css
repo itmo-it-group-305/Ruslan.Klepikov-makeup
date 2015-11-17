@@ -1,0 +1,257 @@
+/*@import url(//necolas.github.io/normalize.css/3.0.2/normalize.css);*/
+/*@import "reset.css";*/
+@import "grid.css";
+
+
+body {
+    font-family: Verdana, Arial, sans-serif;
+    background: white;
+    padding: 0;
+}
+
+header {
+    height: 300px;
+    background: url(../img/site-connection-3.png) no-repeat 50% -95px;
+}
+
+.row-header {
+    background-color: #5fbc5e;
+}
+
+.menu2 {
+    width: 100%;
+    text-align: center;
+}
+
+.div-menu {
+    height: 40px;
+    width: 580px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 200%;
+    text-align: center;
+}
+
+h2 {
+    font-size: 150%;
+    text-align: center;
+}
+
+p,
+summary {
+    text-align: center;
+    margin: 10px;
+    text-indent: 20px;
+}
+
+
+.copy {
+    text-align: center;
+}
+
+.tel {
+    width: 200px;
+    height: 70px;
+    float: right;
+    margin-top: 30px;
+}
+
+.slaider {
+    text-align: center;
+}
+div.logo img {
+    width: 150px;
+}
+
+article {
+    border:1px solid grey;
+    margin:5px; margin-bottom:15px; padding:8px;
+    background-color:white;
+}
+
+footer {
+    margin-top; 10px
+    color: white;
+    background-color: #5FBC5E;
+    margin-bottom: 5px;
+}
+
+table {
+    width: 50%;
+    border: 2px solid rgba(23, 21, 13, 0.55);
+    padding: 5px;
+    margin: auto;
+}
+
+td,
+th {
+    border: 1px solid rgba(23, 21, 13, 0.55);
+    padding: 5px;
+    text-align: center;
+}
+th {
+    background: #c0c0c0;
+}
+
+table.catalog img {
+    width: 100px;
+}
+
+fieldset {
+    background-color: rgba(83, 146, 82, 0.32);
+    width: 60%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+legend {
+    font-size: 105%;
+    color: #7d7e7d;
+}
+
+.form-client label,
+.form-adress label,
+.form-indiv label {
+    padding: 5px;
+    width: 150px;
+    display: inline-table;
+}
+
+div.form-submit,
+div.puch {
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+}
+
+div.form-submit input {
+    width: 170px;
+    height: 40px;
+    font-size: 20px;
+}
+
+div.puch a {
+    border: 1px solid #333;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 5px 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+
+}
+div.puch a:hover {
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    background: linear-gradient(to bottom, #fcfff4, #e9e9ce);
+    color: #2016ee;
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /*font-size: 100%;*/
+    /*font: inherit;*/
+    vertical-align: baseline;
+}
+
+
+.menu,
+.menu li ul {
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+.menu > li {
+    float:left;
+    text-align: center;
+    padding: 7px 15px;
+    margin-left: 1px;
+}
+
+.menu li ul {
+    display:none;
+    position:absolute;
+    text-align: left;
+    background-color:#1F181F;
+    width:200px;
+    margin-top:5px;
+}
+.menu li ul {
+    margin-left:-13px;
+    font-size:80%;
+}
+
+.menu li:hover ul{
+    display:block;
+}
+
+.menu li:hover {
+    background: #7d7e7d;
+}
+
+.menu li li {
+    padding:4px 0 4px 8px;
+}
+
+
+.menu li ul li:hover ul {
+    display:block;
+}
+
+.menu li ul  li:hover {
+    background-color:#7d7e7d;
+}
+
+.menu li ul li ul {
+    margin-left:190px;
+    margin-top:-17px;
+    width:220px;
+}
+
+.menu li a {
+    text-decoration: none;
+    font-size: 120%;
+    color: white;
+    display: block;
+}
+
+.form-row label {
+    text-align: left;
+}
+
+.form-control {
+    width: 100%;
+}
+
+.modal-container {
+    position: fixed;
+    background-color: #ccc;
+    /*border: 1px solid #000;*/
+    width: 70%;
+    max-width: 800px;
+    left: 20%;
+    padding: 40px;
+    border-radius: 5px;
+}
+
+.modal:before {
+    content: "";
+    position: fixed;
+    display: none;
+    background-color: rgba(0,0,0,.8);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%
+}
+
+.modal:target:before {
+    display: block;
+}
+
+.modal:target .modal-container {
+    top: 20%;

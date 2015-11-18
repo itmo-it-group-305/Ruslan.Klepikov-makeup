@@ -1,0 +1,81 @@
+@import "grid.css";
+@import url(./fonts/novecentowide-demibold-webfont.woff);
+@import url(./fonts/novecentowide-medium-webfont.woff);
+
+body {
+    margin: 0 auto;
+    background-color: #EEEEEE;
+}
+
+header {
+    background-color: #FFFFFF;
+}
+
+.logo img {
+    width: 85%;
+}
+
+.header-menu li,
+.social li {
+    display: inline;
+}
+
+.header-menu li {
+    margin-left: 0.6em;
+}
+
+li a {
+    text-decoration: none;
+    font-family: 'Prosto One', cursive;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    font-size: 0.6em;
+    letter-spacing: 3px;
+}
+
+}
+
+.slash {
+    color: #494129;
+}
+
+li a:hover {
+    color: #CECECE;
+}
+
+.colum-1,
+.colum-2 {
+    margin-top: 1%;
+    padding: 2%;
+    background-color: #FFFFFF;
+}
+
+.colum-1 img {
+    display: block;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    .logo img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .header-menu,
+    .social {
+        text-align: center;
+    }
+
+    .header-menu li {
+        display: block;
+        border-bottom: 2px solid #eee;
+    }
+}
+
+
+
+
+
+
